@@ -1,0 +1,41 @@
+.friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 10px 16px;
+}
+
+.l-avatar img {
+    width: 75px;
+    border-radius: 30px;
+}
+
+.s-avatar img {
+    width: 50px;
+    border-radius: 20px;
+}
+
+.friends__column {
+    display: flex;
+    align-items: center;
+}
+
+.friends__name span {
+    display: block;
+    margin-left: 15px;
+}
+
+.friends__column .num {
+    margin-right: 5px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.status {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #B3B3B3;
+}
