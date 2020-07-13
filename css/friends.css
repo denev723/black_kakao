@@ -10,6 +10,11 @@
     border-radius: 30px;
 }
 
+.m-avatar img {
+    width: 60px;
+    border-radius: 25px;
+}
+
 .s-avatar img {
     width: 50px;
     border-radius: 20px;
