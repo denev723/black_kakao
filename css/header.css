@@ -1,5 +1,5 @@
 .header .back-btn {
-    margin-left: -15px;
+    margin-left: -22px;
 }
 
 .header {
@@ -19,4 +19,5 @@
 .header .header__column i {
     font-size: 25px;
     margin-left: 20px;
+    cursor: pointer;
 }
