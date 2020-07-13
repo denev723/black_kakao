@@ -1,0 +1,17 @@
+.nav-bar {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #0F0F0F;
+}
+
+.nav-bar__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 60px;
+}
+
+.nav-bar__item .nav-bar__item-icon {
+    font-size: 25px;
+}
