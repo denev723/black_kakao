@@ -1,0 +1,8 @@
+.plus-friends__title,
+.friends__title {
+    margin: 20px 16px;
+    font-size: 12px;
+    border-top: solid 1px #444444;
+    padding-top: 10px;
+    color: #686d71;
+}
