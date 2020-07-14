@@ -3,6 +3,9 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "setting.css";
 * {
     box-sizing: border-box;
 }
@@ -19,11 +22,23 @@ a {
     color: inherit;
 }
 
-.plus-friends__title,
-.friends__title {
-    margin: 20px 16px;
-    font-size: 12px;
-    border-top: solid 1px #444444;
-    padding-top: 10px;
-    color: #686d71;
+.main {
+    margin-bottom: 90px;
+}
+
+.header,
+.main,
+.nav-bar {
+    animation: ani 1s ease-in-out forwards;
+}
+
+@keyframes ani {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
