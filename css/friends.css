@@ -8,7 +8,6 @@
 .l-avatar img {
     width: 75px;
     border-radius: 30px;
-    margin-top: 10px;
 }
 
 .m-avatar {
@@ -48,7 +47,7 @@
 .status {
     font-size: 13px;
     margin-top: 5px;
-    color: #B3B3B3;
+    color: #b3b3b3;
 }
 
 .plus-friends__title,
@@ -58,4 +57,21 @@
     border-top: solid 1px #444444;
     padding-top: 10px;
     color: #686d71;
+}
+
+.friends__play-list {
+    padding: 3px 10px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #65ba69;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.friends__play-list i {
+    margin-left: 5px;
+    font-size: 15px;
 }
