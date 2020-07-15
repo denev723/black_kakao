@@ -31,7 +31,7 @@
                 </a>
             </div>
             <div class="header__column">
-                <h1 class="header__title">파이리</h1>
+                <h1 class="header__title chat-header">파이리</h1>
             </div>
             <div class="header__column">
                 <i class="fas fa-search"></i>
@@ -40,36 +40,48 @@
         </header>
     </div>
     <main class="main">
+        <div class="chat__timestamp">
+            <span>금요일, 7월 11일, 2020년</span>
+        </div>
         <ul class="chat__messages">
-            <span class="chat__timestamp">금요일, 7월 11일, 2020년</span>
             <li class="incoming-message message">
                 <img src="img/3.jpg" class="m-avatar message__avatar" alt="" />
                 <div class="message__content">
-                    <span class="message__bubble">퇴근했어??</span>
-                    <span class="message__author">파이리</span>
-                </div>
+                    <div class="message__content-left">
+                        <span class="message__author">파이리</span>
+                        <span class="message__bubble">퇴근했어??</span>
+                    </div>
+                    <div class="message__content-right">
+                        <span class="incoming-message__timestamp">오후 8:30</span>
+                    </div>
             </li>
             <li class="sent-message message">
                 <div class="message__content">
+                    <span class="sent-message__timestamp">오후 8:35</span>
                     <span class="message__bubble">아직이야.... 너무 힘들어!!</span>
                 </div>
             </li>
             <li class="incoming-message message">
                 <img src="img/3.jpg" class="m-avatar message__avatar" alt="" />
                 <div class="message__content">
-                    <span class="message__bubble">너 기다리고 있었는데!!</span>
-                    <span class="message__author">파이리</span>
-                </div>
+                    <div class="message__content-left">
+                        <span class="message__author">파이리</span>
+                        <span class="message__bubble">너 기다리고 있었는데!!</span>
+                    </div>
+                    <div class="message__content-right">
+                        <span class="incoming-message__timestamp">오후 8:50</span>
+                    </div>
             </li>
             <li class="sent-message message">
                 <div class="message__content">
+                    <span class="sent-message__timestamp">오후 9:00</span>
                     <span class="message__bubble">언능 집에 들어가!!</span>
                 </div>
             </li>
         </ul>
     </main>
     <div class="chat__write-container">
-        <input class="chat__write" type="text" placeholder="Send message" class="chat__write-input" />
+        <input class="chat__write" type="text" placeholder="Send message" />
         <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
