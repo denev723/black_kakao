@@ -110,8 +110,10 @@
     transition: opacity 1.2s linear;
 }
 
-.chat__icon-right i {
+.chat__icon-right i,
+.chat__icon-left i {
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .chat__write {
