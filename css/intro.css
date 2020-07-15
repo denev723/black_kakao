@@ -1,0 +1,78 @@
+@import "reset.css";
+body {
+    background-color: #25292D;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FCFCFC;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro__main {
+    text-align: center;
+}
+
+.intro__main .intro__main-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.intro__main .intro__main-version {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.intro__btn {
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.intro__btn .intro__btn-title {
+    margin: 0px 10px;
+    font-weight: 300;
+    color: black;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.intro__btn-left i {
+    animation: left 1s ease-in-out infinite;
+}
+
+.intro__btn-right i {
+    animation: right 1s ease-in-out infinite;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-30px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
