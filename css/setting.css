@@ -15,6 +15,14 @@
 }
 
 .setting-box__item span {
-    margin-left: 10px;
+    margin-left: 15px;
     font-weight: 300;
+}
+
+.setting-box__item .notice {
+    margin-left: 10px;
+}
+
+.setting-box__item .version {
+    margin-left: 13px;
 }
