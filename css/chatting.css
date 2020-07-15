@@ -62,6 +62,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .sent-message .message__bubble {
@@ -70,6 +71,7 @@
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .sent-message__timestamp {
@@ -135,11 +137,25 @@
     padding: 10px;
     border-radius: 35px;
     transform: translateY(-100px);
-    transition: width 0.5s linear, margin 0.5s linear, transform 0.5s linear, border-radius 0.5s linear;
+    box-shadow: 0px 4px 11px 3px rgba(0, 0, 0, 0.75), 0px -3px 11px 3px rgba(0, 0, 0, 0.75);
+    transition: width 0.5s linear, margin 0.5s linear, transform 0.5s linear, border-radius 0.5s linear, box-shadow 0.5s linear;
+    animation: shadow 2s ease-in-out infinite;
 }
 
 .chat__write:focus~.chat__icon-left,
 .chat__write:focus~.chat__icon-right {
     opacity: 0;
     transition: opacity, 0.3s, linear;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 4px 11px 3px rgba(0, 0, 0, 0.75), 0px -3px 11px 3px rgba(0, 0, 0, 0.75);
+    }
+    50% {
+        box-shadow: 0px 4px 11px 3px rgba(0, 0, 0, 0.3), 0px -3px 11px 3px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0px 4px 11px 3px rgba(0, 0, 0, 0.75), 0px -3px 11px 3px rgba(0, 0, 0, 0.75);
+    }
 }
