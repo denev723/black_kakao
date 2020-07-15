@@ -25,3 +25,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.header__chat-window {
+    position: absolute;
+    right: 45px;
+    top: 85px;
+    width: 120px;
+    height: 0px;
+    opacity: 0;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ;
+}
+
+.header__column span:hover>.header__chat-window {
+    height: 120px;
+    opacity: 1;
+    transition: height 0.3s linear, opacity .7s linear;
+}
+
+.window__title {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.window__title:nth-child(2) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 13px 0px;
+}
