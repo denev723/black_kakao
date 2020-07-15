@@ -1,7 +1,6 @@
 .chat__timestamp {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .chat__timestamp span {
@@ -97,7 +96,8 @@
     color: #444444;
     opacity: 1;
     font-size: 20px;
-    transition: opacity 1.2s linear;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 0.5s;
 }
 
 .chat__icon-right {
@@ -107,7 +107,8 @@
     color: #444444;
     opacity: 1;
     font-size: 20px;
-    transition: opacity 1.2s linear;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 0.5s;
 }
 
 .chat__icon-right i,
@@ -124,7 +125,7 @@
     font-size: 18px;
     padding-left: 46px;
     transform: translateY(0px);
-    transition: width .5s linear, margin .5s linear, transform .5s linear, border-radius 0.5s linear;
+    transition: width 0.5s linear, margin 0.5s linear, transform 0.5s linear, border-radius 0.5s linear;
 }
 
 .chat__write:focus {
@@ -134,7 +135,7 @@
     padding: 10px;
     border-radius: 35px;
     transform: translateY(-100px);
-    transition: width .5s linear, margin .5s linear, transform .5s linear, border-radius 0.5s linear;
+    transition: width 0.5s linear, margin 0.5s linear, transform 0.5s linear, border-radius 0.5s linear;
 }
 
 .chat__write:focus~.chat__icon-left,
