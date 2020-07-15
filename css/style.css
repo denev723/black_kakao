@@ -7,14 +7,16 @@
 @import "more.css";
 @import "setting.css";
 @import "chatting.css";
+@import "mobile.css";
+@import "chat.css";
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #25292D;
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #FCFCFC;
+    background-color: #25292d;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #fcfcfc;
     overflow: scroll;
 }
 
@@ -24,10 +26,10 @@ a {
 }
 
 .main {
+    margin-top: 130px;
     margin-bottom: 90px;
 }
 
-.header,
 .main,
 .nav-bar {
     animation: ani 1s ease-in-out forwards;
@@ -42,4 +44,13 @@ a {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+.header-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 5px 0px;
 }
