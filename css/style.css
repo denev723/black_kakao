@@ -6,6 +6,7 @@
 @import "find.css";
 @import "more.css";
 @import "setting.css";
+@import "chatting.css";
 * {
     box-sizing: border-box;
 }
