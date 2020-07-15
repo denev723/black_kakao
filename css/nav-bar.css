@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
 }
 
 .nav-bar__item {
@@ -14,4 +14,23 @@
 
 .nav-bar__item .nav-bar__item-icon {
     font-size: 25px;
+}
+
+.nav-bar__item-icon {
+    position: relative;
+}
+
+.nav-bar__item-icon .chat__num {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    top: -8px;
+    left: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
