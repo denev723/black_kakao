@@ -1,0 +1,142 @@
+.chat__timestamp {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chat__timestamp span {
+    display: block;
+    background-color: #444444;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
+.chat__messages {
+    margin: 20px 20px 0px 15px;
+}
+
+.incoming-message {
+    clear: both;
+    float: left;
+}
+
+.sent-message {
+    max-width: 60%;
+    clear: both;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.message__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.message__content-left span {
+    display: block;
+}
+
+.message__content-right {
+    margin-left: 20px;
+    font-size: 10px;
+    color: #888888;
+}
+
+.message__author {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.incoming-message .message__bubble {
+    padding: 10px 15px;
+    background-color: #444444;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sent-message .message__bubble {
+    padding: 10px 15px;
+    background-color: #444444;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sent-message__timestamp {
+    margin-right: 20px;
+    font-size: 10px;
+    color: #888888;
+}
+
+.chat__write-container {
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.chat__icon-left {
+    position: absolute;
+    left: 16px;
+    color: #444444;
+    opacity: 1;
+    font-size: 20px;
+    transition: opacity 1.2s linear;
+}
+
+.chat__icon-right {
+    position: absolute;
+    margin-left: 10px;
+    right: 20px;
+    color: #444444;
+    opacity: 1;
+    font-size: 20px;
+    transition: opacity 1.2s linear;
+}
+
+.chat__icon-right i {
+    margin-left: 5px;
+}
+
+.chat__write {
+    border-top: 1px solid #888888;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 46px;
+    transform: translateY(0px);
+    transition: width .5s linear, margin .5s linear, transform .5s linear, border-radius 0.5s linear;
+}
+
+.chat__write:focus {
+    outline: none;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 35px;
+    transform: translateY(-100px);
+    transition: width .5s linear, margin .5s linear, transform .5s linear, border-radius 0.5s linear;
+}
+
+.chat__write:focus~.chat__icon-left,
+.chat__write:focus~.chat__icon-right {
+    opacity: 0;
+    transition: opacity, 0.3s, linear;
+}
