@@ -11,6 +11,11 @@
     margin-top: 10px;
 }
 
+.m-avatar {
+    width: 60px;
+    border-radius: 50px;
+}
+
 .m-avatar img {
     width: 60px;
     border-radius: 25px;
