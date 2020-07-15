@@ -1,0 +1,27 @@
+.friends__column .new-chat,
+.friends__column .time-stamp {
+    display: block;
+}
+
+.friends__column .new-chat {
+    margin-top: 5px;
+}
+
+.chat-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-column .new-chat {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
